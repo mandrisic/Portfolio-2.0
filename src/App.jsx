@@ -1,4 +1,6 @@
+import BioPage from './components/BioPage';
 import LandingPage from './components/LandingPage'
+import Projects from './components/Projects';
 
 function App() {
   
@@ -6,6 +8,8 @@ function App() {
   return (
     <>
       <LandingPage />
+      <BioPage />
+      <Projects />
     </>
   );
 }
