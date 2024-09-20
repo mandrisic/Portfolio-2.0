@@ -1,27 +1,3 @@
-.bio-page {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 100px;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(38, 33, 33);
-    overflow: hidden;
-}
-
-.left-receipt {
-    position: relative;
-    width: 40%;
-    height: 100%;
-}
-
-img {
-    width: 550px;
-    position: absolute;
-    top: -80px;
-    left: -30px;
-}
-
 @font-face {
     font-family: 'HomemadeApple';
     src: url('../../assets/fonts/HomemadeApple-Regular.ttf');
@@ -32,12 +8,70 @@ img {
     src: url('../../assets/fonts/NanumPenScript-Regular.ttf');
 }
 
-.text-overlay {
+.bio-page {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(38, 33, 33);
+    overflow: hidden;
+}
+
+.bio-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../assets/img/black-wall-texture.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: rotate(180deg) scaleY(-1);
+    z-index: 0;
+}
+
+/* static content */
+.left-receipt {
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+.triangle {
     position: absolute;
     z-index: 1;
+    top: 0vh;
+    left: 50%;
+    width: 5vw;
+}
+
+.board {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1220px;
+    height: 620px;
+}
+
+.receipt {
+    width: 490px;
+    position: absolute;
+    top: -2vh;
+    left: 1vw;
+    z-index: 3;
+}
+
+.text-overlay, .hope {
+    position: absolute;
+    z-index: 4;
     color: rgb(31 39 88);
-    top: 210px;
-    left: 130px;
+    top: 35.5vh;
+    left: 12vw;
     font-size: 24px;
     line-height: 35px;
     transform: rotate(-4deg);
@@ -53,6 +87,327 @@ img {
     text-decoration: 1px underline rgb(31 39 88);
 }
 
-.text-overlay p:active {
+.badge {
+    position: absolute;
+    z-index: 4;
+    width: 260px;
+    top: 58vh;
+    left: 20vw;
+    transform: rotate(5deg);
+}
+
+.hope {
+    font-size: 22px;
+    top: 63vh;
+    left: 15vw;
+    transform: rotate(-7deg);
+    color: rgba(107, 20, 49, 0.8);
+}
+
+.line {
+    top: 69vh;
+}
+
+.line a {
+    color: rgba(107, 20, 49, 0.8);
+    text-decoration: 1px underline;
+}
+
+/* content that changes depending on the category */
+
+.right-content {
+    z-index: 2;
+}
+
+.active {
     text-decoration: 1px underline rgb(31 39 88);
+}
+  
+.title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.title.education::before,
+.title.experience::before,
+.title.technologies::before,
+.title.hobbies::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.header, .other {
+    position: absolute;
+}
+
+/* title images for each category */
+
+.education {
+    width: 44vw;
+    top: -12vh;
+    left: 40vw;
+}
+
+.experience {
+    width: 42vw;
+    top: 7vh;
+    left: 40vw;
+}
+
+.technologies {
+    width: 44vw;
+    top: -3vh;
+    left: 38vw;
+}
+
+.hobbies {
+    width: 46vw;
+    top: -3vh;
+    left: 38vw;
+}
+
+/* images for the bulletin board in category Education */
+
+.other-education-0 {
+    width: 28vw;
+    height: 48vh;
+    top: 40vh;
+    left: 62vw;
+}
+
+.other-education-1 {
+    width: 19vw;
+    top: 28vh;
+    left: 42vw;
+    transform: rotate(-1deg);
+}
+
+.other-education-2 {
+    width: 35vw;
+    height: 54vh;
+    top: 9vh;
+    left: 58vw;
+}
+
+.other-education-3 {
+    width: 4vw;
+    top: 27vh;
+    left: 49vw;
+}
+
+.other-education-4 {
+    width: 4vw;
+    top: 10vh;
+    left: 80vw;
+}
+
+.other-education-5 {
+    width: 4vw;
+    transform: scaleX(-1);
+    top: 11vh;
+    left: 39.5vw;
+}
+
+/* text inside category */
+
+.items-list {
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    width: 30vw;
+    text-align: center;
+    font-family: 'NanumPen';
+    color: rgb(38, 33, 33);
+    z-index: 3;
+    font-size: 18px;
+}
+
+/* positioning the text inside category Education */
+
+ul.items-list.items-list-education-0 {
+    position: absolute;
+    top: 45vh;
+    left: 65.5vw;
+    width: 21vw;
+}
+
+li.line-education.line-education-0-0,
+li.line-education.line-education-0-2 {
+    font-size: larger;
+    margin: 10px auto;
+    text-decoration: 2px dotted underline rgb(38, 33, 33);
+}
+
+ul.items-list.items-list-education-1 {
+    position: absolute;
+    font-size: 18px;
+    top: 30vh;
+    left: 63vw;
+    width: 26vw;
+}
+
+ul.items-list.items-list-education-2 {
+    z-index: 4;
+    top: 81.8vh;
+    left: 37vw;
+    transform: rotate(-1deg);
+}
+
+/* images in category Work experience */
+
+.other-experience-0 {
+    width: 45vw;
+    height: 55vh;
+    top: 14vh;
+    left: 40vw;
+}
+
+.other-experience-1 {
+    width: 23vw;
+    top: 47vh;
+    left: 42vw;
+    z-index: 3;
+}
+
+.other-experience-2 {
+    width: 21vw;
+    top: 47vh;
+    left: 61vw;
+}
+
+.other-experience-3 {
+    width: 18vw;
+    top: 19vh;
+    left: 75vw;
+    z-index: -1;
+    transform: rotate(5deg);
+}
+
+/* text in Work experience */
+
+.items-list-experience {
+    font-family: 'NanumPen';
+    width: 35vw;
+    top: 40vh;
+    left: 40vw;
+    z-index: 4;
+}
+
+ul.items-list.items-list-experience-0 {
+    font-size: 18px;
+    top: 33vh;
+    left: 48vw;
+    width: 30vw;
+}
+
+ul.items-list.items-list-experience-1 {
+    font-size: 18px;
+    top: 57vh;
+    left: 45.5vw;
+    width: 16vw;
+}
+
+ul.items-list.items-list-experience-2 {
+    font-size: 18px;
+    top: 55.5vh;
+    left: 64vw;
+    width: 15vw;
+    transform: rotate(-2deg);
+}
+
+li.line-experience.line-experience-0-0,
+li.line-experience.line-experience-1-0,
+li.line-experience.line-experience-1-2,
+li.line-experience.line-experience-2-0,
+li.line-experience.line-experience-2-2 {
+    margin: 5px auto;
+    text-decoration: 2px dotted underline rgb(38, 33, 33);
+}
+
+/* images in category Technologies */
+
+.other-technologies-0 {
+    width: 28vw;
+    top: 34vh;
+    left: 45vw;
+    z-index: 3;
+}
+
+.other-technologies-1 {
+    width: 18vw;
+    top: 40vh;
+    left: 37vw;
+}
+
+.other-technologies-2 {
+    width: 24vw;
+    top: 32vh;
+    left: 63vw;
+    transform: scaleX(-1) rotate(-30deg);
+}
+
+/* text in Technologies */
+
+ul.items-list.items-list-technologies-0 {
+    font-size: 22px;
+    top: 56vh;
+    left: 52vw;
+    width: 15vw;
+}
+
+/* images in category Hobbies */
+
+.other-hobbies-0 {
+    width: 20vw;
+    top: 36vh;
+    left: 50vw;
+    z-index: 3;
+}
+
+.other-hobbies-1 {
+    width: 22vw;
+    top: 42vh;
+    left: 36vw;
+    z-index: 3;
+    transform: scaleX(-1);
+}
+
+.other-hobbies-2 {
+    width: 13vw;
+    top: 32vh;
+    left: 66vw;
+    transform: rotate(4deg);
+}
+
+.other-hobbies-3 {
+    width: 13vw;
+    top: 16vh;
+    left: 45vw;
+    z-index: 3;
+}
+
+.other-hobbies-4 {
+    width: 15vw;
+    top: 46vh;
+    left: 70vw;
+    z-index: 3;
+
+}
+
+/* text in Hobbies */
+
+ul.items-list.items-list-hobbies-0 {
+    font-size: 22px;
+    top: 42vh;
+    left: 52.5vw;
+    width: 15vw;
 }
