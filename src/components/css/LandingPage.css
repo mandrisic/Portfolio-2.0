@@ -14,6 +14,11 @@
     src: url('../../assets/fonts/ReenieBeanie-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Kg';
+    src: url('../../assets/fonts/KgTenThousandReasons-R1ll.ttf');
+}
+
 
 .container {
     position: relative;
@@ -34,37 +39,38 @@
     background: url(../../assets/img/black-wall-texture.jpg);
     background-size: cover;
     gap: 20px;
-    font-family: 'ReenieBeanie';
+    font-family: 'Kg';
 }
 
 .title-h1 {
-    font-family: 'BeVietnamPro';
+    font-family: 'Kg';
     font-weight: 800;
     font-size: 40px;
     margin: 30px 0px 10px 0px;
+    padding: 10px;
 }
 
 .subtitle-h2 {
     color: rgb(149, 135, 226);
-    font-size: 35px;
-    padding: 0;
+    font-size: 26px;
+    padding: 5px;
     margin: 10px 0;
-    text-decoration: 1px underline white;
 }
 
 .description {
-    width: 50%;
+    width: 49%;
     font-family: 'BeVietnamPro';
-    font-size: 15px;
+    font-size: 17px;
+    line-height: 5vh;
     margin-top: -20px;
 }
 
 .desc {
     color: rgb(149, 135, 226);
     padding: 0 3px;
-    font-family: 'ReenieBeanie';
-    font-size: 26px;
-    text-decoration: 1px underline white;
+    font-family: 'Kg';
+    font-size: 15px;
+
 }
 
 .box {

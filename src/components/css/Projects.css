@@ -1,7 +1,141 @@
+@font-face {
+    font-family: 'BeVietnamPro';
+    src: url('../../assets/fonts/BeVietnamPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Kg';
+    src: url('../../assets/fonts/KgTenThousandReasons-R1ll.ttf');
+}
+
 .projects {
-    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.projects::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
     background: url(../../assets/img/black-wall-texture.jpg);
     background-size: cover;
+    background-position: center;
     transform: scaleY(-1);
+    z-index: -1;
+}
+
+.projects h1 {
+    font-family: 'Kg';
+    font-weight: 800;
+    font-size: 40px;
+    margin: 30px 0px 10px 0px;
+    padding: 20px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.project-card {
+    text-align: center;
+    width: 43vw;
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 25px solid rgba(255, 255, 255, 0.8); /* Blago prozirni kredni rub */
+    border-image: url("https://www.unicefusa.org/sites/default/files/answer-box.png") 20; /* Slika za efekt krede */
+    border-radius: 15px;
+    font-family: 'BeVietnamPro';
+}
+
+.project-title {
+    margin: 7px auto;
+    padding: 8px;
+    font-family: 'Kg';
+}
+
+.project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.technology-container {
+    display: inline-block;
+}
+
+.tech-div {
+    padding: 4px 8px;
+    color: rgb(38, 33, 33);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Prilagođene boje za različite tehnologije */
+.tech-javascript .tech-div {
+    background-color: #e5db8c; /* Žuta za Javascript */
+}
+
+.tech-html .tech-div {
+    background-color: #e0907b; /* Crvena za HTML */
+}
+
+.tech-css .tech-div {
+    background-color: #8898d6; /* Plava za CSS */
+}
+
+.tech-react .tech-div {
+    background-color: #a1deef; /* Svjetloplava za React */
+}
+
+.tech-api .tech-div {
+    background-color: #f9d196; /* Narančasta za API */
+}
+
+.tech-pwa .tech-div {
+    background-color: #aae9ac; /* Zelena za PWA */
+}
+
+.tech-default .tech-div {
+    background-color: rgb(149, 135, 226); /* Default boja */
+}
+
+
+.project-description {
+    text-align: justify;
+    width: 80%;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.project-link {
+    padding: 8px;
+    margin: 10px auto;
+    width: 30%;
+    border: 5px solid rgba(255, 255, 255, 0.8); /* Blago prozirni kredni rub */
+    border-image: url("https://www.unicefusa.org/sites/default/files/answer-box.png") 20; /* Slika za efekt krede */
+    border-radius: 15px;
+    font-family: 'Kg';
+    font-size: 14px;
 }
