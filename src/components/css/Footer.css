@@ -1,6 +1,17 @@
+@font-face {
+    font-family: 'BeVietnamPro';
+    src: url('../../assets/fonts/BeVietnamPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Kg';
+    src: url('../../assets/fonts/KgTenThousandReasons-R1ll.ttf');
+}
+
 .footer {
+    position: relative;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     position: relative;
     z-index: 1;
     display: flex;
@@ -8,6 +19,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    overflow: hidden;
 }
 
 .footer::before {
@@ -20,6 +32,96 @@
     background: url(../../assets/img/black-wall-texture.jpg);
     background-size: cover;
     background-position: center;
-
     z-index: -1;
+}
+
+.footer h2 {
+    font-family: 'Kg';
+    font-size: 42px;
+}
+
+.footer-contacts, .footer p {
+    font-family: 'BeVietnamPro';
+}
+
+.absolute {
+    position: absolute;
+}
+
+.polaroid {
+    width: 14vw;
+    transform: rotate(-6deg);
+    top: 13vh;
+    left: 10vw;
+}
+
+.card {
+    width: 19vw;
+    bottom: -2vh;
+    left: 2vw;
+    z-index: 2;
+    transform: rotate(-3deg);
+}
+
+.sticker {
+    width: 12vw;
+    bottom: 3vh;
+    left: 15vw;
+    z-index: 2;
+    transform: rotate(-9deg);
+}
+
+.torn {
+    width: 12vw;
+    top: -3.5vh;
+    left: -1vw;
+    z-index: 1;
+}
+
+.wing {
+    width: 30vw;
+    top: 2vh;
+    left: -15vw;
+    z-index: -1;
+    transform: scaleX(-1);
+}
+
+.people {
+    width: 25vw;
+    top: 17vh;
+    right: -10vw;
+    z-index: -1;
+    transform: rotate(20deg);
+}
+
+.space {
+    width: 24vw;
+    top: 4vh;
+    right: -5vw;
+    z-index: 1;
+    transform: rotate(10deg);
+}
+
+.plant {
+    width: 10vw;
+    top: 20vh;
+    right: 5vw;
+    z-index: 1;
+    transform: scaleY(-1) scaleX(-1) rotate(18deg);
+}
+
+.sky {
+    width: 20vw;
+    top: 8vh;
+    right: 5vw;
+    z-index: -1;
+    transform: scaleX(-1) rotate(-10deg);
+}
+
+.bear {
+    width: 10vw;
+    top: 40vh;
+    right: 10vw;
+    z-index: -1;
+    transform: rotate(-10deg);
 }

@@ -133,6 +133,7 @@
     padding: 8px;
     margin: 10px auto;
     width: 30%;
+    color: rgba(255, 255, 255, 0.8);
     border: 5px solid rgba(255, 255, 255, 0.8); /* Blago prozirni kredni rub */
     border-image: url("https://www.unicefusa.org/sites/default/files/answer-box.png") 20; /* Slika za efekt krede */
     border-radius: 15px;
