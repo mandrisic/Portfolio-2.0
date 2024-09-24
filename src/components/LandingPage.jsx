@@ -12,9 +12,6 @@ const LandingPage = () => {
   return (
     <div className='container'>
         <div className="landing-page">
-            {/* Logo */}
-            <img src="" alt="" />
-
             {/* Title */}
             <div className="intro">
                 <h1 className='title-h1'>Mirna Andrišić</h1>
@@ -27,17 +24,17 @@ const LandingPage = () => {
             </div>
         </div>
         
-        <img src={play} alt="record" className='record absolute' />
-        <img src={legs} alt="legs" className='legs absolute' />
+        <img src={play} loading="lazy" alt="record" className='record absolute' />
+        <img src={legs} loading="lazy" alt="legs" className='legs absolute' />
         <div className="box a"><p>hello world</p></div>
         <div className="box b"><p>this is my portfolio</p></div>
-        <img src={flower} alt="pressed flower" className='flower absolute' />
+        <img src={flower} loading="lazy" alt="pressed flower" className='flower absolute' />
 
-        <img src={page} alt="a torn up letter" className='page absolute' />
-        <img src={instax1} alt="profile" className='instax1 absolute' />
+        <img src={page} loading="lazy" alt="a torn up letter" className='page absolute' />
+        <img src={instax1} loading="lazy" alt="profile" className='instax1 absolute' />
         <div className="name"><p>Mirna</p></div>
-        <img src={ladybug} alt="ladybug" className='ladybug absolute' />
-        <img src={starblue} alt="star" className='starblue absolute' />
+        <img src={ladybug} loading="lazy" alt="ladybug" className='ladybug absolute' />
+        <img src={starblue} loading="lazy" alt="star" className='starblue absolute' />
     </div>
   )
 }

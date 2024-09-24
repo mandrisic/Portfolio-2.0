@@ -21,17 +21,17 @@ const Footer = () => {
         <p>GitHub: <a href="https://github.com/mandrisic" target="_blank" rel="noopener noreferrer">github.com/mandrisic</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/mirna-andrisic/" target="_blank" rel="noopener noreferrer">/in/mirna-andrisic/</a></p>
       </div>
-      <img className='polaroid absolute' src={polaroid} alt="my polaroid" />
-      <img className='card absolute' src={card} alt="card torn" />
-      <img className='sticker absolute' src={sticker} alt="betty sticker" />
-      <img className='torn absolute' src={torn} alt="torn paper" />
-      <img className='wing absolute' src={wing} alt="butterfly wing" />
+      <img className='polaroid absolute' loading="lazy" src={polaroid} alt="my polaroid" />
+      <img className='card absolute' loading="lazy" src={card} alt="card torn" />
+      <img className='sticker absolute' loading="lazy" src={sticker} alt="betty sticker" />
+      <img className='torn absolute' loading="lazy" src={torn} alt="torn paper" />
+      <img className='wing absolute' loading="lazy" src={wing} alt="butterfly wing" />
 
-      <img className='people absolute' src={people} alt="people" />
-      <img className='space absolute' src={space} alt="spaceship" />
-      <img className='plant absolute' src={plant} alt="plant" />
-      <img className='sky absolute' src={sky} alt="night sky" />
-      <img className='bear absolute' src={bear} alt="bear" />
+      <img className='people absolute' loading="lazy" src={people} alt="people" />
+      <img className='space absolute' loading="lazy" src={space} alt="spaceship" />
+      <img className='plant absolute' loading="lazy" src={plant} alt="plant" />
+      <img className='sky absolute' loading="lazy" src={sky} alt="night sky" />
+      <img className='bear absolute' loading="lazy" src={bear} alt="bear" />
     </div>
   );
 };

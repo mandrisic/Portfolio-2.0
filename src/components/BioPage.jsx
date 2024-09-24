@@ -20,12 +20,12 @@ const BioPage = () => {
 
   return (
     <div className='bio-page'>
-    <img className='triangle' src={triangle} alt="triangle hook" />
-      <img className='board' src={board} alt="cork board" />
+    <img className='triangle' src={triangle} loading="lazy" alt="triangle hook" />
+      <img className='board' src={board} loading="lazy" alt="cork board" />
       <div className="left-receipt">
-      <img src={stack} alt="" className="stack" />
-        <img src={change} alt="" className="change" />
-        <img className='receipt' src={receipt} alt="" />
+      <img src={stack} alt="papers" loading="lazy" className="stack" />
+        <img src={change} alt="paper to write" loading="lazy" className="change" />
+        <img className='receipt' loading="lazy" src={receipt} alt="receipt template" />
         <div className="text-overlay">
           <p className={activeCategory === 'education' ? 'active' : ''} onClick={() => handleCategoryChange('education')}>Education</p>
           <p className={activeCategory === 'experience' ? 'active' : ''} onClick={() => handleCategoryChange('experience')}>Work experience</p>
@@ -34,16 +34,16 @@ const BioPage = () => {
         </div>
         <p className='hope'>See the full CV: </p>
         <p className='hope line'><a href={cv}>Click me</a></p>
-        <img src={badge} alt="badge" className='badge' />
+        <img src={badge} loading="lazy" alt="badge" className='badge' />
       </div>
 
       <div className="right-content">
         <div className='header-image'>
-            {headerImage && <img src={headerImage} alt={`${title} header`} className={`header ${title.toLowerCase()}`} />}
+            {headerImage && <img src={headerImage} loading="lazy" alt={`${title} header`} className={`header ${title.toLowerCase()}`} />}
         </div>
         <div className='other-images'>
           {otherImages && otherImages.map((image, index) => (
-            <img key={index} src={image} alt={`${title} content ${index}`} className={`other other-${title.toLowerCase()}-${index}`} />
+            <img key={index} src={image} alt={`${title} loading="lazy" content ${index}`} className={`other other-${title.toLowerCase()}-${index}`} />
           ))}
         </div>
         <div className="sections">
