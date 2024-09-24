@@ -26,7 +26,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: url(../../assets/img/black-wall-texture.jpg);
+    background: url(../../assets/img/long-background.svg);
     background-size: cover;
     background-position: center;
     transform: scaleY(-1);
@@ -93,34 +93,34 @@
 }
 
 /* Prilagođene boje za različite tehnologije */
+
 .tech-javascript .tech-div {
-    background-color: #e5db8c; /* Žuta za Javascript */
+    background-color: #e5db8c;
 }
 
 .tech-html .tech-div {
-    background-color: #e0907b; /* Crvena za HTML */
+    background-color: #e0907b;
 }
 
 .tech-css .tech-div {
-    background-color: #8898d6; /* Plava za CSS */
+    background-color: #8898d6;
 }
 
 .tech-react .tech-div {
-    background-color: #a1deef; /* Svjetloplava za React */
+    background-color: #a1deef;
 }
 
 .tech-api .tech-div {
-    background-color: #f9d196; /* Narančasta za API */
+    background-color: #f9d196;
 }
 
 .tech-pwa .tech-div {
-    background-color: #aae9ac; /* Zelena za PWA */
+    background-color: #aae9ac;
 }
 
 .tech-default .tech-div {
-    background-color: rgb(149, 135, 226); /* Default boja */
+    background-color: rgb(149, 135, 226);
 }
-
 
 .project-description {
     text-align: justify;
@@ -132,11 +132,96 @@
 .project-link {
     padding: 8px;
     margin: 10px auto;
-    width: 30%;
+    width: 40%;
     color: rgba(255, 255, 255, 0.8);
     border: 5px solid rgba(255, 255, 255, 0.8); /* Blago prozirni kredni rub */
     border-image: url("https://www.unicefusa.org/sites/default/files/answer-box.png") 20; /* Slika za efekt krede */
     border-radius: 15px;
     font-family: 'Kg';
     font-size: 14px;
+}
+
+@media screen and (max-width: 1000px){
+    .projects h1 {
+        font-size: 32px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .project-description {
+        font-size: 12px;
+    }
+
+    .project-technologies {
+        gap: 6px;
+        margin-bottom: 16px;
+        width: 60%;
+    }
+
+    .tech-div {
+        font-size: 12px;
+    }
+
+    .project-link {
+        width: 50%;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 790px){
+    .projects-container {
+        flex-direction: column;
+    }
+    
+    .project-card {
+        width: 70vw;
+        border: 15px solid rgba(255, 255, 255, 0.8);
+        border-image: url("https://www.unicefusa.org/sites/default/files/answer-box.png") 20;
+    }
+
+    .projects h1 {
+        font-size: 26px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .project-card {
+        width: 80vw;
+        border: 10px solid rgba(255, 255, 255, 0.8);
+        border-image: url("https://www.unicefusa.org/sites/default/files/answer-box.png") 20;
+    }
+
+    .projects h1 {
+        font-size: 22px;
+    }
+
+    .project-title {
+        font-size: 16px;
+    }
+
+    .project-description {
+        font-size: 10px;
+        width: 100%
+    }
+
+    .project-technologies {
+        gap: 6px;
+        margin-bottom: 16px;
+        width: 70%;
+    }
+
+    .tech-div {
+        font-size: 10px;
+    }
+
+    .project-link {
+        width: 60%;
+        font-size: 10px;
+    }
 }

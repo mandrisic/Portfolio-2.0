@@ -91,7 +91,7 @@
 }
 
 .a {
-    top: 41vh;
+    top: 278.8px;
     left: 9vw;
     transform: rotate(0deg);
     z-index: 2;
@@ -99,7 +99,7 @@
 }
 
 .b {
-    top: 49vh;
+    top: 333.2px;
     left: 7vw;
     transform: rotate(-2deg);
     z-index: 3;
@@ -113,7 +113,7 @@
     font-family: 'ReenieBeanie';
     color: rgb(47, 36, 88);
     transform: rotate(-6deg);
-    top: 58vh;
+    top: 394px;
     left: 85vw;
 }
 
@@ -126,7 +126,7 @@
 
 .record {
     width: 530px;
-    top: 13vh;
+    top: 88.4px;
     left: -22vw;
     z-index: 2;
 }
@@ -135,13 +135,13 @@
     z-index: 1;
     transform: scaleX(-1) rotate(-8deg);
     width: 400px;
-    top: -8vh;
+    top: -54.4px;
     left: 2vw;
 }
 
 .flower {
     width: 200px;
-    top: 60vh;
+    top: 408px;
     left: 6vw;
     z-index: 2;
 }
@@ -149,14 +149,14 @@
 .page {
     width: 480px;
     left: 80vw;
-    top: -27vh;
+    top: -184px;
     z-index: 1;
 }
 
 .instax1 {
     z-index: 2;
     width: 230px;
-    top: -12vh;
+    top: -82px;
     left: 75vw;
     transform: rotate(-10deg) translateY(50%);
 }
@@ -164,13 +164,254 @@
 .ladybug {
     z-index: 2;
     width: 280px;
-    top: -10vh;
+    top: -68px;
     left: 80vw;
 }
 
 .starblue {
     z-index: 3;
     width: 180px;
-    top: 58vh;
+    top: 394px;
     left: 75vw;
+}
+
+@media screen and (max-width: 1150px){
+    .title-h1 {
+        font-size: 32px;
+    }
+    
+    .subtitle-h2 {
+        font-size: 18px;
+    }
+    
+    .description {
+        width: 40%;
+        font-size: 14px;
+        line-height: 4vh;
+    }
+
+    .desc {
+        font-size: 11px;
+    }
+
+    .box {
+        font-size: 14px;
+    }
+
+    .a {
+        left: 6vw;
+        width: 120px;
+    }
+    
+    .b {
+        left: 5vw;
+        width: 150px;
+    }
+
+    .name {
+        left: 88vw;
+    }
+
+    .record {
+        left: -30vw;
+    }
+    
+    .legs {
+        left: -5vw;
+    }
+    
+    .flower {
+        left: 0vw;
+    }
+
+}
+
+@media screen and (max-width: 940px){
+    .title-h1 {
+        font-size: 28px;
+    }
+    
+    .subtitle-h2 {
+        font-size: 16px;
+    }
+    
+    .description {
+        width: 40%;
+        font-size: 12px;
+        line-height: 4vh;
+    }
+
+    .desc {
+        font-size: 9px;
+    }
+
+    .box {
+        font-size: 12px;
+    }
+
+    .a {
+        left: 6vw;
+        width: 100px;
+    }
+    
+    .b {
+        left: 5vw;
+        width: 130px;
+    }
+
+    .name {
+        font-size: 26px;
+        left: 91.5vw;
+    }
+
+    .record {
+        left: -30vw;
+        width: 430px;
+    }
+    
+    .legs {
+        width: 300px;
+    }
+    
+    .flower {
+        width: 150px;
+    }
+
+    .page {
+        width: 400px;
+        left: 85vw;
+    }
+    
+    .instax1 {
+        width: 180px;
+        top: 1vh;
+        left: 78vw;
+    }
+    
+    .ladybug {
+        width: 220px;
+        top: 0vh;
+        left: 82vw;
+    }
+    
+    .starblue {
+        width: 140px;
+        left: 78vw;
+    }
+
+}
+
+@media screen and (max-width: 720px){
+
+    .landing-page {
+        padding-top: 220px;
+    }
+
+    .title-h1 {
+        font-size: 24px;
+    }
+    
+    .subtitle-h2 {
+        font-size: 14px;
+    }
+    
+    .description {
+        width: 60%;
+        font-size: 10px;
+    }
+
+    .desc {
+        font-size: 9px;
+    }
+
+    .box, .record, .legs, .flower, .page, .starblue {
+        display: none;
+    }
+
+    .name {
+        font-size: 26px;
+        top: 305px;
+        left: 48%;
+    }
+    
+    .instax1 {
+        width: 180px;
+        top: 30vh;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, -50%) rotate(-3deg);
+    }
+    
+    .ladybug {
+        width: 200px;
+        top: 0vh;
+        left: 47vw;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+
+    .landing-page {
+        padding-top: 220px;
+    }
+
+    .title-h1 {
+        font-size: 22px;
+    }
+    
+    .subtitle-h2 {
+        font-size: 12px;
+    }
+
+    .name {
+        top: 280px;
+        left: 46%;
+    }
+    
+    .instax1 {
+        width: 140px;
+    }
+    
+    .ladybug {
+        width: 160px;
+        top: 5vh;
+        left: 46vw;
+    }
+
+}
+
+@media screen and (max-width: 395px){
+
+    .landing-page {
+        padding-top: 240px;
+    }
+
+    .title-h1 {
+        font-size: 22px;
+    }
+    
+    .subtitle-h2 {
+        font-size: 12px;
+    }
+
+    .name {
+        left: 46%;
+        top: 280px;
+    }
+
+    .description {
+        width: 80%;
+    }
+    
+    .instax1 {
+        width: 140px;
+    }
+    
+    .ladybug {
+        width: 160px;
+        top: 3vh;
+        left: 43vw;
+    }
+
 }

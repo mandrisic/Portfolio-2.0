@@ -29,13 +29,13 @@ import './css/Projects.css';
         {projectData.map((project, index) => (
           <div key={index} className="project-card">
             <h2 className="project-title">{project.title}</h2>
-            <p className="project-technologies">
+            <div className="project-technologies">
               {project.technologies.map((tech, techIndex) => (
                 <div className={`technology-container ${getTechClass(tech)}`} key={techIndex}>
                   <div className="tech-div">{tech}</div>
                 </div>
               ))}
-            </p>
+            </div>
             <p className="project-description">{project.description}</p>
             <a href={project.githubLink} className="project-link" target="_blank" rel="noopener noreferrer">
               View on GitHub

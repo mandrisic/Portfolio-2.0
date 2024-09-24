@@ -51,13 +51,13 @@
 .polaroid {
     width: 14vw;
     transform: rotate(-6deg);
-    top: 13vh;
+    top: 88.4px;
     left: 10vw;
 }
 
 .card {
     width: 19vw;
-    bottom: -2vh;
+    top: 53.6px;
     left: 2vw;
     z-index: 2;
     transform: rotate(-3deg);
@@ -65,7 +65,7 @@
 
 .sticker {
     width: 12vw;
-    bottom: 3vh;
+    top: 300px;
     left: 15vw;
     z-index: 2;
     transform: rotate(-9deg);
@@ -73,14 +73,14 @@
 
 .torn {
     width: 12vw;
-    top: -3.5vh;
+    top: -23.8px;
     left: -1vw;
     z-index: 1;
 }
 
 .wing {
     width: 30vw;
-    top: 2vh;
+    top: 13.6px;
     left: -15vw;
     z-index: -1;
     transform: scaleX(-1);
@@ -88,7 +88,7 @@
 
 .people {
     width: 25vw;
-    top: 17vh;
+    top: 115.6px;
     right: -10vw;
     z-index: -1;
     transform: rotate(20deg);
@@ -96,7 +96,7 @@
 
 .space {
     width: 24vw;
-    top: 4vh;
+    top: 27.2px;
     right: -5vw;
     z-index: 1;
     transform: rotate(10deg);
@@ -104,7 +104,7 @@
 
 .plant {
     width: 10vw;
-    top: 20vh;
+    top: 136px;
     right: 5vw;
     z-index: 1;
     transform: scaleY(-1) scaleX(-1) rotate(18deg);
@@ -112,7 +112,7 @@
 
 .sky {
     width: 20vw;
-    top: 8vh;
+    top: 54.4px;
     right: 5vw;
     z-index: -1;
     transform: scaleX(-1) rotate(-10deg);
@@ -120,8 +120,219 @@
 
 .bear {
     width: 10vw;
-    top: 40vh;
+    top: 272px;
     right: 10vw;
     z-index: -1;
     transform: rotate(-10deg);
+}
+
+@media screen and (max-width: 1325px) { 
+    .sky {
+        top: 100px;
+    }
+
+    .people {
+        top: 150.6px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .polaroid {
+        top: 130px;
+    }
+    
+    .card {
+        width: 21vw;
+        left: 1vw;
+        top: 70px;
+    }
+    
+    .torn {
+        top: -4px;
+    }
+    
+    .wing {
+        top: 36px;
+    }
+
+    .sticker {
+        top: 330px;
+    }
+
+    .bear {
+        right: 14vw;
+    }
+
+    .plant {
+        right: 5.5vw;
+        top: 126px;
+    }
+}
+
+@media screen and (max-width: 1120px) { 
+    .polaroid {
+        top: 160px;
+    }
+    
+    .card {
+        width: 19vw;
+        left: 2vw;
+        top: 130px;
+    }
+    
+    .torn {
+        top: 78px;
+    }
+    
+    .wing {
+        top: 120px;
+        left: -17vw;
+    }
+
+    .space {
+        top: 60px;
+    }
+
+    .plant {
+        right: 5.5vw;
+        top: 146px;
+    }
+
+    .sky {
+        top: 140px;
+    }
+
+    .people {
+        top: 170.6px;
+    }
+}
+
+@media screen and (max-width: 1000px) { 
+    .footer h2 {
+        font-size: 32px;
+    }
+
+    .polaroid {
+        top: 180px;
+        left: 8vw;
+    }
+    
+    .card {
+        top: 150px;
+        left: 0vw;
+    }
+    
+    .torn {
+        top: 92px;
+    }
+
+    .space {
+        top: 100px;
+    }
+
+    .plant {
+        right: 5.5vw;
+        top: 178px;
+    }
+
+    .sky {
+        top: 180px;
+    }
+
+    .people {
+        top: 220px;
+    }
+
+    .bear {
+        top: 300px;
+        right: 12vw;
+    }
+}
+
+@media screen and (max-width: 855px) { 
+    .polaroid {
+        top: 199px;
+        left: 6vw;
+    }
+    
+    .card {
+        top: 170px;
+        left: -2vw;
+    }
+    
+    .torn {
+        top: 120px;
+    }
+
+    .space {
+        top: 140px;
+    }
+
+    .plant {
+        top: 210px;
+    }
+
+    .sky {
+        top: 220px;
+    }
+
+    .people {
+        top: 260px;
+    }
+}
+
+@media screen and (max-width: 750px) { 
+    .polaroid {
+        top: 220px;
+        left: 6vw;
+    }
+    
+    .card {
+        top: 190px;
+        left: -2vw;
+    }
+    
+    .torn {
+        top: 150px;
+    }
+
+    .space {
+        top: 180px;
+    }
+
+    .plant {
+        top: 240px;
+    }
+
+    .sky {
+        top: 240px;
+    }
+
+    .bear {
+        top: 360px;
+        right: 12vw;
+    }
+
+    .people {
+        top: 260px;
+    }
+}
+
+@media screen and (max-width: 650px) { 
+    .space, .plant, .sky, .bear, .people, .card, .polaroid, .sticker, .wing, .torn {
+        display: none;
+    }
+
+    .footer h2 {
+        font-size: 22px;
+    }
+
+    .footer-contacts, .footer p {
+       font-size: 12px;
+    }
+
+    .footer {
+      padding: 40px;
+      text-align: center;
+    }
 }

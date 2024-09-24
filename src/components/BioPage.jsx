@@ -3,6 +3,8 @@ import receipt from '../assets/img/file.png';
 import board from '../assets/img/1280x900-wcyVBR.png';
 import triangle from '../assets/img/triangle.png';
 import badge from '../assets/img/badge.png';
+import change from '../assets/img/change.png';
+import stack from '../assets/img/stack.png';
 import data from './data';
 import cv from '../assets/CV-MIRNA-ANDRISIC.pdf';
 import './css/BioPage.css';
@@ -21,6 +23,8 @@ const BioPage = () => {
     <img className='triangle' src={triangle} alt="triangle hook" />
       <img className='board' src={board} alt="cork board" />
       <div className="left-receipt">
+      <img src={stack} alt="" className="stack" />
+        <img src={change} alt="" className="change" />
         <img className='receipt' src={receipt} alt="" />
         <div className="text-overlay">
           <p className={activeCategory === 'education' ? 'active' : ''} onClick={() => handleCategoryChange('education')}>Education</p>

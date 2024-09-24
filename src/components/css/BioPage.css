@@ -40,10 +40,11 @@
     width: 40%;
     height: 100%;
 }
+
 .triangle {
     position: absolute;
     z-index: 1;
-    top: 0vh;
+    top: 0px;
     left: 50%;
     width: 5vw;
 }
@@ -51,7 +52,7 @@
 .board {
     position: absolute;
     z-index: 2;
-    top: 50%;
+    top: 340px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1220px;
@@ -61,16 +62,20 @@
 .receipt {
     width: 490px;
     position: absolute;
-    top: -2vh;
+    top: -13.6px;
     left: 1vw;
     z-index: 3;
+}
+
+.change, .stack {
+    display: none;
 }
 
 .text-overlay, .hope {
     position: absolute;
     z-index: 4;
     color: rgb(31 39 88);
-    top: 35.5vh;
+    top: 241.4px;
     left: 12vw;
     font-size: 24px;
     line-height: 35px;
@@ -91,21 +96,21 @@
     position: absolute;
     z-index: 4;
     width: 260px;
-    top: 58vh;
+    top: 394.4px;
     left: 20vw;
     transform: rotate(5deg);
 }
 
 .hope {
     font-size: 22px;
-    top: 63vh;
+    top: 428.4px;
     left: 15vw;
     transform: rotate(-7deg);
     color: rgba(107, 20, 49, 0.8);
 }
 
 .line {
-    top: 69vh;
+    top: 469.2px;
 }
 
 .line a {
@@ -153,25 +158,25 @@
 
 .education {
     width: 44vw;
-    top: -12vh;
+    top: -81.6px;
     left: 40vw;
 }
 
 .experience {
     width: 42vw;
-    top: 7vh;
+    top: 47.6px;
     left: 40vw;
 }
 
 .technologies {
     width: 44vw;
-    top: -3vh;
+    top: -20.4px;
     left: 38vw;
 }
 
 .hobbies {
     width: 46vw;
-    top: -3vh;
+    top: -20.4px;
     left: 38vw;
 }
 
@@ -180,13 +185,13 @@
 .other-education-0 {
     width: 28vw;
     height: 48vh;
-    top: 40vh;
+    top: 272px;
     left: 62vw;
 }
 
 .other-education-1 {
     width: 19vw;
-    top: 28vh;
+    top: 190.4px;
     left: 42vw;
     transform: rotate(-1deg);
 }
@@ -194,26 +199,26 @@
 .other-education-2 {
     width: 35vw;
     height: 54vh;
-    top: 9vh;
+    top: 61.2px;
     left: 58vw;
 }
 
 .other-education-3 {
     width: 4vw;
-    top: 27vh;
+    top: 183.6px;
     left: 49vw;
 }
 
 .other-education-4 {
     width: 4vw;
-    top: 10vh;
+    top: 68px;
     left: 80vw;
 }
 
 .other-education-5 {
     width: 4vw;
     transform: scaleX(-1);
-    top: 11vh;
+    top: 74.8px;
     left: 39.5vw;
 }
 
@@ -235,7 +240,7 @@
 
 ul.items-list.items-list-education-0 {
     position: absolute;
-    top: 45vh;
+    top: 306px;
     left: 65.5vw;
     width: 21vw;
 }
@@ -250,14 +255,14 @@ li.line-education.line-education-0-2 {
 ul.items-list.items-list-education-1 {
     position: absolute;
     font-size: 18px;
-    top: 30vh;
+    top: 204px;
     left: 63vw;
     width: 26vw;
 }
 
 ul.items-list.items-list-education-2 {
     z-index: 4;
-    top: 81.8vh;
+    top: 540px;
     left: 37vw;
     transform: rotate(-1deg);
 }
@@ -266,27 +271,27 @@ ul.items-list.items-list-education-2 {
 
 .other-experience-0 {
     width: 45vw;
-    height: 55vh;
-    top: 14vh;
+    height: 62vh;
+    top: 78px;
     left: 40vw;
 }
 
 .other-experience-1 {
     width: 23vw;
-    top: 47vh;
+    top: 319.6px;
     left: 42vw;
     z-index: 3;
 }
 
 .other-experience-2 {
     width: 21vw;
-    top: 47vh;
+    top: 319.6px;
     left: 61vw;
 }
 
 .other-experience-3 {
     width: 18vw;
-    top: 19vh;
+    top: 129.2px;
     left: 75vw;
     z-index: -1;
     transform: rotate(5deg);
@@ -297,28 +302,28 @@ ul.items-list.items-list-education-2 {
 .items-list-experience {
     font-family: 'NanumPen';
     width: 35vw;
-    top: 40vh;
+    top: 272px;
     left: 40vw;
     z-index: 4;
 }
 
 ul.items-list.items-list-experience-0 {
     font-size: 18px;
-    top: 33vh;
+    top: 224.4px;
     left: 48vw;
     width: 30vw;
 }
 
 ul.items-list.items-list-experience-1 {
     font-size: 18px;
-    top: 57vh;
+    top: 387.6px;
     left: 45.5vw;
     width: 16vw;
 }
 
 ul.items-list.items-list-experience-2 {
     font-size: 18px;
-    top: 55.5vh;
+    top: 377.4px;
     left: 64vw;
     width: 15vw;
     transform: rotate(-2deg);
@@ -337,20 +342,20 @@ li.line-experience.line-experience-2-2 {
 
 .other-technologies-0 {
     width: 28vw;
-    top: 34vh;
+    top: 231.2px;
     left: 45vw;
     z-index: 3;
 }
 
 .other-technologies-1 {
     width: 18vw;
-    top: 40vh;
+    top: 272px;
     left: 37vw;
 }
 
 .other-technologies-2 {
     width: 24vw;
-    top: 32vh;
+    top: 217.6px;
     left: 63vw;
     transform: scaleX(-1) rotate(-30deg);
 }
@@ -359,7 +364,7 @@ li.line-experience.line-experience-2-2 {
 
 ul.items-list.items-list-technologies-0 {
     font-size: 22px;
-    top: 56vh;
+    top: 380.8px;
     left: 52vw;
     width: 15vw;
 }
@@ -368,14 +373,14 @@ ul.items-list.items-list-technologies-0 {
 
 .other-hobbies-0 {
     width: 20vw;
-    top: 36vh;
+    top: 244.8px;
     left: 50vw;
     z-index: 3;
 }
 
 .other-hobbies-1 {
     width: 22vw;
-    top: 42vh;
+    top: 285.6px;
     left: 36vw;
     z-index: 3;
     transform: scaleX(-1);
@@ -383,21 +388,21 @@ ul.items-list.items-list-technologies-0 {
 
 .other-hobbies-2 {
     width: 13vw;
-    top: 32vh;
+    top: 217.6px;
     left: 66vw;
     transform: rotate(4deg);
 }
 
 .other-hobbies-3 {
     width: 13vw;
-    top: 16vh;
+    top: 108.8px;
     left: 45vw;
     z-index: 3;
 }
 
 .other-hobbies-4 {
     width: 15vw;
-    top: 46vh;
+    top: 312.8px;
     left: 70vw;
     z-index: 3;
 
@@ -407,7 +412,1254 @@ ul.items-list.items-list-technologies-0 {
 
 ul.items-list.items-list-hobbies-0 {
     font-size: 22px;
-    top: 42vh;
+    top: 285.6px;
     left: 52.5vw;
     width: 15vw;
+}
+
+@media screen and (max-width: 1280px){
+    .receipt {
+        width: 440px;
+        top: 18px;
+        left: 5vw;
+    }
+
+    .board {
+        top: 340px;
+        left: 50%;
+        width: 1120px;
+    }
+
+    .other-education-0 {
+        left: 63vw;
+    }
+
+    .other-education-2 {
+        width: 35vw;
+        height: 54vh;
+        top: 61.2px;
+        left: 59vw;
+    }
+
+    ul.items-list.items-list-education-2 {
+        top: 510px;
+    }
+
+    .text-overlay, .hope {
+        font-size: 18px;
+        top: 246.4px;
+        left: 16vw;
+        line-height: 30px;
+    }
+
+    .hope {
+        font-size: 18px;
+        top: 420.4px;
+        left: 18vw;
+    }
+
+    .line {
+        top: 469.2px;
+    }
+
+    .education {
+        width: 44vw;
+        top: -61.6px;
+        left: 40vw;
+    }
+
+    ul.items-list.items-list-education-0 {
+        position: absolute;
+        top: 306px;
+        left: 67vw;
+        width: 21vw;
+        font-size: 16px;
+    }
+        
+    ul.items-list.items-list-education-1 {
+        font-size: 15px;
+        top: 204px;
+        left: 64vw;
+        width: 26vw;
+    } 
+
+    .other-experience-0 {
+        width: 45vw;
+        height: 62vh;
+        top: 78px;
+        left: 40vw;
+    }
+
+    ul.items-list.items-list-experience-0 {
+        font-size: 16px;
+        top: 228.4px;
+    }
+
+    ul.items-list.items-list-experience-1 {
+        font-size: 16px;
+        top: 387.6px;
+        line-height: 22px;
+    }
+
+    ul.items-list.items-list-experience-2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .other-technologies-0 {
+        top: 210px;
+    }
+    
+    ul.items-list.items-list-technologies-0 {
+        top: 340px;
+        width: 15vw;
+    }
+
+    ul.items-list.items-list-hobbies-0 {
+        line-height: 26px;
+    }
+
+}
+
+@media screen and (max-width: 1180px){
+    .receipt {
+        width: 390px;
+        top: 60px;
+        left: 4vw;
+    }
+
+    .board {
+        top: 340px;
+        left: 50%;
+        width: 1020px;
+    }
+
+    .education {
+        width: 44vw;
+        top: -48.6px;
+        left: 40vw;
+    }
+
+    .experience {
+        top: 70px;
+    }
+
+    .other-education-0 {
+        width: 28vw;
+        height: 43vh;
+        top: 272px;
+        left: 63vw;
+    }
+
+    .other-education-2 {
+        width: 35vw;
+        height: 54vh;
+        top: 61.2px;
+        left: 59vw;
+    }
+
+    ul.items-list.items-list-education-0 {
+        left: 66.5vw;
+        font-size: 14px;
+    }
+
+    ul.items-list.items-list-education-1 {
+        font-size: 14px;
+        top: 204px;
+        left: 64vw;
+        width: 25vw;
+    }  
+
+    ul.items-list.items-list-education-2 {
+        top: 480px;
+        font-size: 13px;
+    }
+
+    ul.items-list.items-list-experience-0 {
+        font-size: 14px;
+        top: 236.4px;
+    }
+
+    ul.items-list.items-list-experience-1 {
+        font-size: 14px;
+        top: 370.6px;
+        line-height: 20px;
+    }
+
+    ul.items-list.items-list-experience-2 {
+        font-size: 14px;
+        top: 360px;
+        line-height: 20px;
+    }
+
+    .text-overlay, .hope {
+        font-size: 16px;
+        top: 266.4px;
+        left: 14vw;
+        line-height: 25px;
+    }
+
+    .hope {
+        font-size: 14px;
+        top: 410.4px;
+        left: 19vw;
+    }
+
+    .line {
+        top: 439.2px;
+    }
+
+    .other-technologies-0 {
+        width: 30vw;
+        top: 220px;
+    }
+
+    .hobbies {
+        top: 16px;
+    }
+
+    .other-hobbies-0 {
+        width: 20vw;
+        top: 244.8px;
+    }
+    
+    .other-hobbies-2 {
+        width: 15vw;
+    }
+    
+    .other-hobbies-3 {
+        width: 15vw;
+    }
+    
+    .other-hobbies-4 {
+        width: 18vw;
+        left: 71vw;
+    }
+    
+    ul.items-list.items-list-hobbies-0 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    ul.items-list.items-list-education-2 {
+        top: 454px;
+        font-size: 13px;
+    }
+
+    .board {
+        top: 340px;
+        left: 50%;
+        width: 920px;
+    }
+
+    .technologies {
+        top: 20px;
+    }
+
+    .other-technologies-0 {
+        width: 32vw;
+        top: 210px;
+    }
+    
+    ul.items-list.items-list-technologies-0 {
+        top: 330px;
+        left: 54vw;
+        width: 15vw;
+        line-height: 30px;
+    }
+
+    ul.items-list.items-list-hobbies-0 {
+        top: 280px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    ul.items-list.items-list-education-2 {
+        top: 430px;
+        font-size: 13px;
+    }
+
+    .board {
+        top: 340px;
+        left: 50%;
+        width: 820px;
+    }
+
+    .receipt {
+        width: 330px;
+        top: 110px;
+        left: 4vw;
+    }
+
+    .text-overlay, .hope {
+        font-size: 14px;
+        top: 290.4px;
+        left: 14vw;
+        line-height: 20px;
+    }
+
+    .hope {
+        font-size: 12px;
+        top: 410.4px;
+        left: 19vw;
+    }
+
+    .line {
+        top: 439.2px;
+    }
+
+    .education {
+        width: 44vw;
+        top: -28.6px;
+        left: 36vw;
+    }
+    
+    .other-education-5, .other-education-4, .other-education-3 {
+        display: none;
+    }
+
+    .other-experience-0 {
+        width: 48vw;
+        left: 38vw;
+    }
+    
+    .other-experience-1 {
+        width: 25vw;
+        left: 41vw;
+        z-index: 3;
+    }
+    
+    .other-experience-2 {
+        width: 23vw;
+    }
+
+    ul.items-list.items-list-experience-1, ul.items-list.items-list-experience-2 {
+        line-height: 15px;
+    }
+    
+    ul.items-list.items-list-technologies-0 {
+        top: 320px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    ul.items-list.items-list-hobbies-0 {
+        top: 280px;
+        left: 55vw;
+        font-size: 18px;
+    }
+
+    .hobbies {
+        top: 38px;
+        width: 450px;
+    }
+
+    .other-hobbies-0 {
+        width: 24vw;
+        top: 244.8px;
+    }
+    
+    .other-hobbies-2 {
+        width: 15vw;
+        left: 70vw;
+    }
+    
+    .other-hobbies-3 {
+        width: 15vw;
+        top: 130px;
+    }
+    
+    .other-hobbies-4 {
+        width: 18vw;
+        left: 74vw;
+    }
+}
+
+
+@media screen and (max-width: 880px){
+    ul.items-list.items-list-education-2 {
+        top: 410px;
+    }
+
+    .board {
+        width: 780px;
+    }
+
+    .technologies {
+        top: 40px;
+    }
+
+    .other-technologies-0 {
+        width: 34vw;
+    }
+    
+    ul.items-list.items-list-technologies-0 {
+        top: 320px;
+        left: 54vw;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    ul.items-list.items-list-education-2 {
+        top: 390px;
+        font-size: 10px;
+    }
+
+    .triangle {
+        top: 70px;
+        left: 50%;
+        width: 5vw;
+    }
+
+    .board {
+        width: 710px;
+        height: 500px;
+    }
+
+    .education {
+        top: 22px;
+    }
+
+    .experience {
+        top: 110px;
+    }
+
+    .receipt {
+        width: 290px;
+        top: 110px;
+        left: 4vw;
+    }
+    
+    ul.items-list.items-list-education-0 {
+        font-size: 12px;
+        top: 294px;
+    }
+
+    ul.items-list.items-list-education-1 {
+        font-size: 12px;
+    } 
+
+    .other-education-0 {
+        width: 28vw;
+        height: 38vh;
+        top: 272px;
+        left: 63vw;
+    }
+
+    .other-education-2 {
+        width: 35vw;
+        height: 54vh;
+        top: 61.2px;
+        left: 59vw;
+    }
+
+    .text-overlay, .hope {
+        font-size: 12px;
+        top: 264.4px;
+        left: 16vw;
+        line-height: 20px;
+    }
+
+    .hope {
+        font-size: 12px;
+        top: 370.4px;
+        left: 19vw;
+    }
+
+    .line {
+        top: 390.2px;
+    }
+
+    .badge {
+        width: 200px;
+        top: 364.4px;
+        left: 20vw;
+        transform: rotate(5deg);
+    }
+
+    ul.items-list.items-list-experience-1 {
+        font-size: 12px;
+        top: 362px;
+        line-height: 12px;
+    }
+
+    ul.items-list.items-list-experience-2 {
+        font-size: 12px;
+        top: 360px;
+        left: 65vw;
+        line-height: 12px;
+    }
+
+    .technologies {
+        top: 80px;
+    }
+
+    .other-technologies-0 {
+        width: 32vw;
+        top: 250px;
+    }
+
+    .other-technologies-2 {
+        width: 24vw;
+        top: 250px;
+        left: 65vw;
+    }
+    
+    ul.items-list.items-list-technologies-0 {
+        line-height: 18px;
+        top: 350px;
+    }
+
+    ul.items-list.items-list-hobbies-0 {
+        top: 270px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 730px){
+    ul.items-list.items-list-education-2 {
+        top: 370px;
+        font-size: 10px;
+    }
+
+    .board, .triangle, .receipt, .badge {
+        display: none;
+    }
+
+    .stack {
+        display: block;
+        position: absolute;
+        z-index: 0;
+        top: -40px;
+        left: 10vw;
+        transform: rotate(100deg);
+        width: 90vw;
+    }
+
+    .change {
+        transform: rotate(-3deg);
+        display: block;
+        width: 200px;
+        position: absolute;
+        top: 200px;
+        left: 8vw;
+    }
+
+    .text-overlay, .hope {
+        font-size: 12px;
+        top: 230px;
+        left: 16vw;
+        line-height: 20px;
+    }
+
+    .hope {
+        font-size: 12px;
+        top: 370.4px;
+        left: 19vw;
+    }
+
+    .line {
+        top: 390.2px;
+    }
+
+    .other-education-0 {
+        width: 25vw;
+        height: 31vh;
+        top: 202px;
+        left: 63vw;
+    }
+
+    .education {
+        top: 400px;
+        left: 50vw;
+        width: 280px;
+        transform: rotate(-10deg);
+    }
+
+    .experience {
+        top: 180px;
+    }
+
+    ul.items-list.items-list-experience-0 {
+        font-size: 12px;
+        top: 280px;
+    }
+
+    ul.items-list.items-list-experience-1 {
+        font-size: 12px;
+        top: 394px;
+        line-height: 12px;
+    }
+
+    ul.items-list.items-list-experience-2 {
+        font-size: 12px;
+        top: 390px;
+        left: 65vw;
+        line-height: 12px;
+    }
+
+    .other-experience-0 {
+        width: 48vw;
+        left: 38vw;
+        top: 130px;
+    }
+    
+    .other-experience-1 {
+        width: 25vw;
+        left: 41vw;
+        top: 360px;
+    }
+    
+    .other-experience-2 {
+        width: 23vw;
+        top: 360px;
+    }
+
+    .other-experience-3 {
+        top: 410px;
+        width: 130px;
+        left: 20vw;
+        transform: rotate(-20deg);
+    }
+
+    .other-education-2 {
+        width: 35vw;
+        height: 54vh;
+        top: 260.2px;
+        left: 30vw;
+    }
+
+    ul.items-list.items-list-education-1 {
+        top: 410px;
+        left: 34vw;
+    }
+
+    ul.items-list.items-list-education-0 {
+        font-size: 10px;
+        left: 66vw;
+        top: 220px;
+        width: 20vw;
+    }
+
+    .technologies {
+        top: 150px;
+    }
+
+    .other-technologies-0 {
+        width: 32vw;
+        left: 40vw;
+        top: 310px;
+    }
+
+    .other-technologies-1 {
+        width: 20vw;
+        top: 370px;
+        left: 30vw;
+        transform: rotate(-20deg);
+    }
+
+    .other-technologies-2 {
+        width: 24vw;
+        top: 320px;
+        left: 60vw;
+    }
+    
+    ul.items-list.items-list-technologies-0 {
+        line-height: 18px;
+        top: 400px;
+        left: 49vw;
+        font-size: 16px;
+    }
+
+    ul.items-list.items-list-hobbies-0 {
+        top: 365px;
+        left: 46.5vw;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .hobbies {
+        top: 100px;
+        left: 35vw;
+        width: 400px;
+        transform: rotate(-7deg);
+    }
+
+    .other-hobbies-0 {
+        width: 24vw;
+        left: 42vw;
+        top: 340px;
+    }
+    
+    .other-hobbies-1 {
+        top: 420px;
+        width: 24vw;
+        left: 20vw;
+    }
+
+    .other-hobbies-2 {
+        width: 18vw;
+        left: 63vw;
+        top: 280px;
+    }
+    
+    .other-hobbies-3 {
+        width: 15vw;
+        top: 200px;
+        left: 50vw;
+    }
+    
+    .other-hobbies-4 {
+        width: 18vw;
+        left: 74vw;
+    }
+    
+}
+
+@media screen and (max-width: 650px){
+    ul.items-list.items-list-education-2 {
+        top: 350px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 426px){
+    ul.items-list.items-list-education-2 {
+        top: 350px;
+        font-size: 9px;
+        left: 54vw;
+    }
+
+    .stack {
+        top: -30px;
+        left: -10vw;
+        transform: rotate(10deg);
+        width: 510px;
+    }
+
+    .change {
+        transform: rotate(-5deg);
+        width: 160px;
+        top: 180px;
+        left: 13vw;
+    }
+
+    .education {
+        top: 40px;
+        left: 10vw;
+        width: 280px;
+        transform: rotate(-5deg);
+    }
+
+    .other-education-0 {
+        width: 45vw;
+        height: 24vh;
+        top: 370px;
+        left: 40vw;
+    }
+
+    ul.items-list.items-list-education-0 {
+        top: 396px;
+        left: 44vw;
+        width: 36vw;
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .other-education-1 {
+        width: 26vw;
+        top: 200px;
+        left: 55vw;
+        transform: rotate(-1deg);
+    }
+
+    ul.items-list.items-list-education-1 {
+        top: 330px;
+        left: 20vw;
+        font-size: 10px;
+        width: 28vw;
+        transform: rotate(-5deg);
+    }
+
+    .other-education-2 {
+        width: 48vw;
+        height: 290px;
+        top: 220px;
+        left: 10vw;
+        transform: rotate(-5deg);
+    }
+
+    .text-overlay, .hope {
+        font-size: 11px;
+        top: 195px;
+        left: 21vw;
+        width: 100%;
+        line-height: 18px;
+        transform: rotate(-6deg);
+    }
+
+    .hope {
+        font-size: 12px;
+        top: 540.4px;
+        left: 22vw;
+        width: 100%;
+    }
+
+    .line {
+        top: 558.2px;
+        font-weight: bold;
+    }
+
+    .experience {
+        top: 100px;
+        transform: rotate(-5deg);
+        left: 28vw;
+    }
+
+    ul.items-list.items-list-experience-0 {
+        font-size: 10px;
+        top: 312px;
+        width: 50vw;
+        left: 26vw;
+        line-height: 12px;
+        transform: rotate(-5deg);
+    }
+
+    ul.items-list.items-list-experience-1 {
+        font-size: 10px;
+        top: 420px;
+        left: 28vw;
+        width: 29vw;
+        line-height: 10px;
+    }
+
+    ul.items-list.items-list-experience-2 {
+        font-size: 10px;
+        top: 436px;
+        left: 63vw;
+        width: 26vw;
+        line-height: 12px;
+    }
+
+    .other-experience-0 {
+        width: 70vw;
+        height: 250px;
+        left: 16vw;
+        transform: rotate(-5deg);
+        top: 220px;
+    }
+    
+    .other-experience-1 {
+        width: 38vw;
+        left: 24vw;
+        top: 380px;
+    }
+    
+    .other-experience-2 {
+        width: 35vw;
+        top: 410px;
+        left: 58vw;
+    }
+
+    .other-experience-3 {
+        top: 140px;
+        left: 50vw;
+        transform: rotate(10deg);
+    }
+
+    .technologies {
+        top: 66px;
+        left: 25vw;
+        width: 230px;
+        transform: rotate(-5deg);
+    }
+
+    .other-technologies-0 {
+        width: 55vw;
+        left: 30vw;
+        top: 300px;
+    }
+
+    .other-technologies-1 {
+        display: none;
+    }
+
+    .other-technologies-2 {
+        width: 38vw;
+        top: 190px;
+        left: 52vw;
+        transform: scaleX(-1) rotate(-10deg);
+    }
+    
+    ul.items-list.items-list-technologies-0 {
+        line-height: 18px;
+        top: 390px;
+        left: 34vw;
+        width: 200px;
+        font-size: 16px;
+    }
+
+    ul.items-list.items-list-hobbies-0 {
+        top: 340px;
+        left: 50vw;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .hobbies {
+        top: 40px;
+        left: 13vw;
+        width: 300px;
+    }
+
+    .other-hobbies-0 {
+        width: 36vw;
+        left: 40vw;
+        top: 310px;
+    }
+    
+    .other-hobbies-1 {
+        top: 180px;
+        width: 26vw;
+        left: 56vw;
+        transform: scale(1);
+    }
+
+    .other-hobbies-2 {
+        width: 20vw;
+        left: 20vw;
+        top: 340px;
+        transform: rotate(-12deg);
+    }
+    
+    .other-hobbies-3 {
+        width: 15vw;
+        top: 120px;
+        left: 50vw;
+    }
+    
+    .other-hobbies-4 {
+        width: 30vw;
+        top: 400px;
+        left: 60vw;
+    }
+}
+
+@media screen and (max-width: 376px){
+    ul.items-list.items-list-education-2 {
+        top: 340px;
+        left: 62vw;
+        width: 90px;
+        line-height: 10px;
+        font-size: 10px;
+    }
+
+    .stack {
+        left: -16vw;
+    }
+
+    .change {
+        width: 150px;
+    }
+
+    .text-overlay, .hope {
+        font-size: 10px;
+        top: 194px;
+    }
+
+    .hope {
+        font-size: 12px;
+        top: 540.4px;
+    }
+
+    .line {
+        top: 558.2px;
+        font-weight: bold;
+    }
+
+    .other-education-0 {
+        width: 48vw;
+        height: 24vh;
+        top: 364px;
+        left: 40vw;
+    }
+
+    ul.items-list.items-list-education-0 {
+        top: 382px;
+        left: 46vw;
+        width: 36vw;
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .other-education-1 {
+        width: 28vw;
+        top: 200px;
+        left: 60vw;
+        transform: rotate(-1deg);
+    }
+
+    ul.items-list.items-list-education-1 {
+        top: 310px;
+        left: 20vw;
+        line-height: 12px;
+        font-size: 10px;
+        width: 29vw;
+        transform: rotate(-5deg);
+    }
+
+    .other-education-2 {
+        width: 48vw;
+        height: 290px;
+        top: 196px;
+        left: 10vw;
+        transform: rotate(-5deg);
+    }
+    
+    ul.items-list.items-list-technologies-0 {
+        line-height: 18px;
+        top: 376px;
+        left: 31vw;
+        width: 200px;
+        font-size: 16px;
+    }
+
+    ul.items-list.items-list-hobbies-0 {
+        top: 340px;
+        left: 50vw;
+        font-size: 14px;
+        line-height: 12px;
+    }
+
+    .hobbies {
+        top: 44px;
+        left: 10vw;
+    }
+
+    .other-hobbies-0 {
+        width: 40vw;
+        left: 38vw;
+    }
+    
+    .other-hobbies-1 {
+        top: 200px;
+        width: 28vw;
+        left: 60vw;
+    }
+
+    .other-hobbies-2 {
+        width: 23vw;
+        left: 20vw;
+        top: 340px;
+    }
+    
+    .other-hobbies-3 {
+        width: 15vw;
+        top: 150px;
+        left: 54vw;
+    }
+    
+    .other-hobbies-4 {
+        width: 30vw;
+        top: 370px;
+        left: 62vw;
+    }
+}
+
+@media screen and (max-width: 321px){
+    ul.items-list.items-list-education-2 {
+        top: 320px;
+        left: 62vw;
+        width: 90px;
+        line-height: 10px;
+        font-size: 10px;
+    }
+    
+    .education {
+        width: 230px;
+        top: 34px;
+    }
+
+    .stack {
+        left: -26vw;
+        top: -60px;
+    }
+
+    .change {
+        width: 150px;
+        top: 150px;
+        left: 10vw;
+    }
+
+    .text-overlay, .hope {
+        font-size: 10px;
+        top: 165px;
+    }
+
+    .hope {
+        font-size: 12px;
+        top: 530px;
+    }
+
+    .line {
+        top: 548.2px;
+        font-weight: bold;
+    }
+
+    .other-education-0 {
+        width: 54vw;
+        height: 27vh;
+        top: 338px;
+        left: 38vw;
+    }
+
+    ul.items-list.items-list-education-0 {
+        top: 364px;
+        left: 48vw;
+        width: 37vw;
+    }
+
+    .other-education-1 {
+        width: 33vw;
+        top: 176px;
+        left: 60vw;
+        transform: rotate(-1deg);
+    }
+
+    ul.items-list.items-list-education-1 {
+        top: 290px;
+        left: 20vw;
+        line-height: 12px;
+        font-size: 10px;
+        width: 29vw;
+        transform: rotate(-5deg);
+    }
+
+    .other-education-2 {
+        width: 50vw;
+        height: 290px;
+        top: 176px;
+        left: 10vw;
+        transform: rotate(-5deg);
+    }
+
+    .experience {
+        top: 70px;
+        transform: rotate(-5deg);
+        left: 20vw;
+        width: 200px;
+    }
+
+    ul.items-list.items-list-experience-0 {
+        top: 270px;
+        width: 50vw;
+    }
+
+    ul.items-list.items-list-experience-1 {
+        font-size: 10px;
+        top: 370px;
+        left: 24vw;
+        width: 29vw;
+        line-height: 10px;
+    }
+
+    ul.items-list.items-list-experience-2 {
+        top: 400px;
+        left: 63vw;
+        width: 27vw;
+        line-height: 10px;
+    }
+
+    .other-experience-0 {
+        top: 180px;
+    }
+    
+    .other-experience-1 {
+        width: 44vw;
+        left: 16vw;
+        top: 346px;
+    }
+    
+    .other-experience-2 {
+        width: 40vw;
+        top: 380px;
+        left: 56vw;
+    }
+
+    .other-experience-3 {
+        top: 100px;
+        left: 56vw;
+        transform: rotate(10deg);
+    }
+
+    .technologies {
+        top: 34px;
+        left: 18vw;
+        width: 230px;
+        transform: rotate(-5deg);
+    }
+
+    .other-technologies-0 {
+        width: 62vw;
+        left: 22vw;
+        top: 270px;
+    }
+
+    .other-technologies-2 {
+        width: 38vw;
+        top: 190px;
+        left: 52vw;
+        transform: scaleX(-1) rotate(-10deg);
+    }
+    
+    ul.items-list.items-list-technologies-0 {
+        line-height: 18px;
+        top: 340px;
+        left: 22vw;
+        width: 200px;
+        font-size: 16px;
+    }
+
+    ul.items-list.items-list-hobbies-0 {
+        top: 320px;
+        left: 49vw;
+        font-size: 16px;
+        line-height: 12px;
+    }
+
+    .hobbies {
+        top: 10px;
+        left: 5vw;
+    }
+
+    .other-hobbies-0 {
+        width: 53vw;
+        left: 30vw;
+        top: 290px;
+    }
+    
+    .other-hobbies-1 {
+        width: 34vw;
+    }
+
+    .other-hobbies-2 {
+        width: 28vw;
+        left: 16vw;
+        top: 340px;
+        z-index: 3;
+    }
+    
+    .other-hobbies-3 {
+        width: 20vw;
+        left: 60vw;
+    }
+    
+    .other-hobbies-4 {
+        width: 36vw;
+        top: 390px;
+        left: 62vw;
+    }
 }
