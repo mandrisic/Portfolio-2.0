@@ -1,6 +1,7 @@
 # Portfolio
 
 Welcome to my personal portfolio! This project showcases my skills, projects, and experience as a developer.
+To see the portfolio page visit https://portfolio-mandrisic.netlify.app/
 
 ## Table of Contents
 - [About the Project](#about-the-project)
