@@ -1,5 +1,11 @@
 const projectData = [
   {
+    title: "LoveBites",
+    technologies: ["React", "MobX", "Firebase", "API", "MaterialUI", "CSS"],
+    description: "LoveBites is a recipe application built with React and MobX, allowing users to explore, create, edit, and delete recipes. Recipes are fetched from the MealDB API and Firebase, with filters for country, categories, and a search functionality.",
+    githubLink: "https://github.com/mandrisic/LoveBites"
+  },
+  {
     title: "Joke generator",
     technologies: ["Javascript", "HTML", "CSS", "API"],
     description: "Project provides users with a simple and engaging interface to fetch and display random jokes. The app uses an external API to deliver a variety of jokes, ensuring fresh content each time it's accessed.",
